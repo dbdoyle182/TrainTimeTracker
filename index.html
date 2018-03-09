@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Tracker</title>
+<!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
+<!-- The link to the general bootstrap library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- Link to my stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header class="text-center">
+        <h1>Train Departure/Arrival Times</h1>
+        <h6>Chugga chugga choo choo!</h6>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th><strong>Train Name</strong></th>
+                                    <th><strong>Destination</strong></th>
+                                    <th><strong>Frequency (min)</strong></th>
+                                    <th><strong>Next Arrival</strong></th>
+                                    <th><strong>Minutes Away</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody id="train-data">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-6 col-xs-12">
+                    <div class="card">
+                        <div class="card-header">
+
+                        </div>
+                        <div class="card-body">
+                            <form method="post">
+                                <div class="form-group ">
+                                    <label class="control-label requiredField" for="train-input">
+                                        Train Name
+                                        <span class="asteriskField">
+                                            *
+                                        </span>
+                                    </label>
+                                    <input class="form-control" id="train-input" name="train-input" placeholder="Type your Train Name here" type="text"/>
+                                </div>
+                                <div class="form-group ">
+                                    <label class="control-label requiredField" for="destination-input">
+                                        Destination
+                                        <span class="asteriskField">
+                                            *
+                                        </span>
+                                    </label>
+                                    <input class="form-control" id="destination-input" name="destination-input" placeholder="Destination of train" type="text"/>
+                                </div>
+                                <div class="form-group ">
+                                    <label class="control-label requiredField" for="number">
+                                        Time of Departure
+                                        <span class="asteriskField">
+                                            *
+                                        </span>
+                                    </label>
+                                    <input class="form-control" id="number" name="number" placeholder="i.e 13:30" type="text"/>
+                                    <span class="help-block" id="hint_number">
+                                        (HH:mm -military time)
+                                    </span>
+                                </div>
+                                <div class="form-group ">
+                                    <label class="control-label requiredField" for="freq-input">
+                                        Frequency
+                                        <span class="asteriskField">
+                                            *
+                                        </span>
+                                    </label>
+                                    <input class="form-control" id="freq-input" name="freq-input" placeholder="i.e 3" type="text"/>
+                                    <span class="help-block" id="hint_freq-input">
+                                        (minutes)
+                                    </span>
+                                </div>
+                                <div class="form-group">
+                                    <div>
+                                        <button class="btn btn-primary " name="submit" type="submit">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script src="assets/train.js"></script>
+</body>
+</html>
