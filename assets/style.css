@@ -1,0 +1,33 @@
+*{
+    font-family: 'Rammetto One', cursive;
+}
+#cardborder {
+    border-radius: 6px;
+    border: 1px solid sienna;
+}
+.card-body {
+    background-color: burlywood;
+    color: darkslategray;
+}
+#cardheader {
+    background-color: sienna;
+    color: whitesmoke;
+}
+#pageheader {
+    background-color: rgba(162,73,54,0.5);
+    color: whitesmoke;
+}
+
+#bg { 
+    /* The image used */
+    background-image: url("http://thewallpaper.co/wp-content/uploads/2016/03/inside-a-train-station-widescreen-high-quality-wallpaper-download-train-station-images-cool-high-resolution-wonderful-1600x1200-768x576.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}                    
+                    

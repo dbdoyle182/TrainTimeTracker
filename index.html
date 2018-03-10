@@ -9,20 +9,22 @@
     <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
 <!-- The link to the general bootstrap library -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- Link to the Google Font Page -->
+<link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
 <!-- Link to my stylesheet -->
     <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-    <header class="text-center">
+<body id="bg">
+    <header class="text-center pt-3 pb-3" id="pageheader">
         <h1>Train Departure/Arrival Times</h1>
         <h6>Chugga chugga choo choo!</h6>
     </header>
     <div class="container">
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header">
-
+                <div class="card" id="cardborder">
+                    <div class="card-header" id="cardheader">
+                        Current Train Schedule
                     </div>
                     <div class="card-body">
                         <table class="table">
@@ -43,11 +45,11 @@
                 </div>
             </div>
         </div>
-            <div class="row">
-                <div class="col-md-12 col-sm-6 col-xs-12">
-                    <div class="card">
-                        <div class="card-header">
-
+            <div class="row mt-5">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="card" id="cardborder">
+                        <div class="card-header" id="cardheader">
+                            Add Train
                         </div>
                         <div class="card-body">
                             <form method="post">
